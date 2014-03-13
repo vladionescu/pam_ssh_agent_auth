@@ -16,7 +16,7 @@ Project page: http://pamsshagentauth.sourceforge.net/
 Installation
 ------------
 
-Install the rpm as usual, ```rpm -ivh <name>.rpm```
+Install the rpm as usual, ```yum install <name>.rpm```
 
 Add the following line in /etc/pam.d/sudo directly before the ```auth include``` line
 
