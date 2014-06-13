@@ -7,9 +7,9 @@ This is meerly a package for 64-bit RHEL/CentOS 6 (el6) so I can better distribu
 
 Built and tested on RHEL 6.5, should be compatible with all RHEL 6 and equivalent.
 
-This is current (0.9.5) as of this writing (Feb 2014).
+This is current (0.10.2) as of this writing (June 2014).
 
-The module was last updated April 2013.
+The module was last updated March 26 2014.
 
 Project page: http://pamsshagentauth.sourceforge.net/
 
@@ -25,6 +25,8 @@ auth       sufficient        pam_ssh_agent_auth.so file=~/.ssh/authorized_keys
 ```
 
 Add the following line to /etc/sudoers (use visudo) after the rest of the ```Defaults env_keep``` lines.
+
+Alternatively you can create a file with just the following line and place that file in /etc/sudoers.d/, this is a better solution for config managed infrastructures.
 
 ```
 Defaults    env_keep += "SSH_AUTH_SOCK"
